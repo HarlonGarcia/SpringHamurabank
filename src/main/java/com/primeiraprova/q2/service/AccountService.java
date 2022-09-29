@@ -31,7 +31,7 @@ public class AccountService {
         return account;
     }
 
-    public List<Account> findAccountAll() {
+    public List<Account> findAll() {
         return accountRepository.findAll();
     }
 
