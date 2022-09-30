@@ -5,17 +5,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
-@Entity @Data
-@NoArgsConstructor @AllArgsConstructor
-public class Account {
+@Entity(name = "users")
+@Data @AllArgsConstructor @NoArgsConstructor
+public class User {
     @Id @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
     @Column
     private String name;
-    @Column
-    private int agency;
-    @Column
-    private int number;
-    @Column
-    private double balance;
 }
